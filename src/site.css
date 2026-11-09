@@ -1,0 +1,161 @@
+:root{
+  --asfalto:#16212A;
+  --asfalto-2:#22303B;
+  --senal:#F2B100;
+  --papel:#EDF0F2;
+  --acero:#66737E;
+  --linea:#CFD6DC;
+  --blanco:#FFFFFF;
+  --texto:#16212A;
+  --ancho:1180px;
+  --display:"Barlow Condensed",system-ui,sans-serif;
+  --cuerpo:"Barlow",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--blanco);color:var(--texto);font:400 1.0625rem/1.6 var(--cuerpo)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--senal);outline-offset:2px}
+.contenedor{max-width:var(--ancho);margin:0 auto;padding:0 20px}
+.saltar{position:absolute;left:-999px;top:0;background:var(--senal);color:var(--asfalto);padding:8px 14px;z-index:10}
+.saltar:focus{left:12px;top:12px}
+
+/* Cabecera */
+.cabecera{background:var(--asfalto);color:var(--blanco)}
+.cabecera .contenedor{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.marca{display:block;line-height:0}
+.marca img{height:34px;width:auto}
+.nav{display:flex;gap:22px;flex-wrap:wrap}
+.nav a{text-decoration:none;font:500 1.0625rem/1 var(--display);letter-spacing:.02em;color:#C9D2D9;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current="page"]{color:var(--blanco);border-bottom-color:var(--senal)}
+.menu-btn{display:none;background:none;border:1px solid #3A4A57;color:var(--blanco);font:500 1rem var(--display);padding:6px 12px}
+
+/* Línea de carretera: el elemento propio de la marca */
+.carretera{height:10px;background:var(--asfalto);position:relative;overflow:hidden}
+.carretera::before{content:"";position:absolute;left:0;right:0;top:3px;height:4px;
+  background:repeating-linear-gradient(90deg,var(--senal) 0 56px,transparent 56px 96px)}
+@media (prefers-reduced-motion:no-preference){
+  .carretera.anim::before{animation:avanzar 1.4s cubic-bezier(.2,.7,.2,1) 1}
+  @keyframes avanzar{from{transform:translateX(-30%)}to{transform:translateX(0)}}
+}
+
+/* Portada */
+.portada{background:var(--asfalto);color:var(--blanco);padding:72px 0 64px}
+.portada h1{font:700 clamp(3rem,9vw,7.5rem)/.9 var(--display);margin:0;letter-spacing:-.01em;max-width:11ch}
+.portada p{font-size:1.1875rem;color:#C9D2D9;max-width:52ch;margin:24px 0 32px}
+.botones{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;font:600 1.125rem/1 var(--display);letter-spacing:.02em;text-decoration:none;padding:14px 22px;border:2px solid var(--senal);background:var(--senal);color:var(--asfalto)}
+.btn:hover{background:#FFC71F;border-color:#FFC71F}
+.btn.sec{background:transparent;color:inherit;border-color:currentColor}
+.btn.sec:hover{background:rgba(255,255,255,.08)}
+.btn.osc{background:var(--asfalto);border-color:var(--asfalto);color:var(--blanco)}
+
+/* Secciones */
+.seccion{padding:72px 0}
+.seccion.gris{background:var(--papel)}
+.titulo{font:700 clamp(2rem,4.5vw,3.25rem)/1 var(--display);margin:0 0 12px}
+.intro{color:var(--acero);max-width:60ch;margin:0 0 40px}
+h2,h3{font-family:var(--display)}
+
+/* Catálogo */
+.categoria{margin-top:48px}
+.categoria:first-of-type{margin-top:0}
+.categoria-cab{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:3px solid var(--asfalto);padding-bottom:10px;margin-bottom:24px;flex-wrap:wrap}
+.categoria-cab h3{font:700 1.75rem/1 var(--display);margin:0}
+.categoria-cab p{margin:0;color:var(--acero);font-size:.98rem}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:28px 24px}
+.ficha{text-decoration:none;display:flex;flex-direction:column}
+.ficha .foto{aspect-ratio:4/3;background:var(--papel);display:grid;place-items:center;overflow:hidden;position:relative}
+.seccion.gris .ficha .foto{background:var(--blanco)}
+.ficha .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:12px}
+.sin-foto{font:700 2.25rem/1 var(--display);color:var(--linea);text-align:center;padding:16px}
+.ficha h4{font:700 1.75rem/1 var(--display);margin:14px 0 6px}
+.ficha:hover h4{text-decoration:underline;text-decoration-color:var(--senal);text-decoration-thickness:3px;text-underline-offset:4px}
+.cifras{display:flex;gap:18px;margin:0;padding:0;list-style:none;flex-wrap:wrap}
+.cifras li{display:flex;flex-direction:column}
+.cifras b{font:600 1.25rem/1.1 var(--display)}
+.cifras span{font-size:.85rem;color:var(--acero)}
+.etiqueta{display:inline-block;background:var(--senal);color:var(--asfalto);font:600 .9rem/1 var(--display);padding:5px 8px;margin-bottom:8px;align-self:flex-start}
+
+/* Garantía bloque portada */
+.garantia-bloque{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.sello{font-family:var(--display);line-height:.9}
+.sello .n{font-size:clamp(5rem,13vw,9rem);font-weight:700;display:block}
+.sello .u{font-size:1.75rem;font-weight:600;color:var(--acero)}
+.lista{padding:0;margin:0 0 28px;list-style:none}
+.lista li{padding:10px 0;border-bottom:1px solid var(--linea)}
+
+/* Red */
+.red{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.red article{background:var(--asfalto);color:var(--blanco);padding:32px}
+.red h3{font:700 2rem/1 var(--display);margin:0 0 12px}
+.red p{color:#C9D2D9;margin:0 0 24px}
+
+/* Página de modelo */
+.modelo-cab{background:var(--asfalto);color:var(--blanco);padding:40px 0 0}
+.migas{font-size:.95rem;color:#9FB0BC;margin-bottom:20px}
+.migas a{color:#C9D2D9}
+.modelo-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:end}
+.modelo-cab h1{font:700 clamp(3rem,8vw,6.5rem)/.9 var(--display);margin:0 0 16px}
+.modelo-cab p{color:#C9D2D9;max-width:46ch;margin:0 0 28px}
+.modelo-foto{background:var(--asfalto-2);aspect-ratio:4/3;display:grid;place-items:center;position:relative}
+.modelo-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:16px}
+.modelo-foto .sin-foto{color:#2F404D;font-size:3.5rem}
+.tablero{background:var(--senal);color:var(--asfalto)}
+.tablero ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin:0;padding:0;list-style:none}
+.tablero li{padding:20px 20px 18px;border-right:1px solid rgba(22,33,42,.18)}
+.tablero li:last-child{border-right:0}
+.tablero b{display:block;font:700 2.25rem/1 var(--display)}
+.tablero span{font-size:.95rem;text-transform:capitalize}
+.galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:24px}
+.galeria img{background:var(--papel);aspect-ratio:1;object-fit:contain;padding:8px;width:100%}
+.dos-col{display:grid;grid-template-columns:1fr 1.4fr;gap:56px}
+.equip{columns:1;padding:0;margin:0;list-style:none}
+.equip li{padding:9px 0 9px 22px;border-bottom:1px solid var(--linea);position:relative}
+.equip li::before{content:"";position:absolute;left:0;top:19px;width:10px;height:3px;background:var(--senal)}
+.colores{display:flex;flex-wrap:wrap;gap:14px 18px;margin:8px 0 0;padding:0;list-style:none}
+.colores li{display:flex;align-items:center;gap:8px;font-size:.98rem}
+.colores i{width:22px;height:22px;border-radius:50%;border:1px solid var(--linea);display:inline-block}
+.colores i.tornasol{background:conic-gradient(#6c3bd1,#1fa3b8,#3ec46d,#d1b23b,#d1503b,#6c3bd1)}
+.specs h3{font:700 1.375rem/1 var(--display);margin:32px 0 8px}
+.specs h3:first-child{margin-top:0}
+table{width:100%;border-collapse:collapse;font-size:1rem}
+th,td{text-align:left;padding:9px 12px 9px 0;border-bottom:1px solid var(--linea);vertical-align:top}
+th{font-weight:500;color:var(--acero);width:45%}
+.nota{background:var(--papel);padding:16px 18px;border-left:4px solid var(--senal)}
+.pequeno{font-size:.9rem;color:var(--acero)}
+
+/* Garantía página */
+.tabla-ancha{overflow-x:auto}
+.tabla-ancha table{min-width:620px}
+.tabla-ancha th{width:auto;color:var(--asfalto);font-weight:600;font-family:var(--display);font-size:1.0625rem}
+.nivel{font:700 1.5rem/1 var(--display)}
+.pasos{counter-reset:p;list-style:none;padding:0;margin:0}
+.pasos li{counter-increment:p;position:relative;padding:0 0 22px 56px}
+.pasos li::before{content:counter(p);position:absolute;left:0;top:-2px;width:38px;height:38px;background:var(--asfalto);color:var(--senal);font:700 1.375rem/38px var(--display);text-align:center}
+.pasos b{display:block;font-family:var(--display);font-size:1.25rem}
+.prosa{max-width:70ch}
+
+/* Pie */
+.pie{background:var(--asfalto);color:#9FB0BC;padding:48px 0 32px;font-size:.95rem}
+.pie .contenedor{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.pie h2{font:600 1.125rem/1 var(--display);color:var(--blanco);margin:0 0 12px}
+.pie ul{list-style:none;padding:0;margin:0}
+.pie li{margin:6px 0}
+.pie a{color:#C9D2D9}
+.pie .lema{font:700 1.75rem/1.1 var(--display);color:var(--blanco);margin:0 0 10px}
+.legal{grid-column:1/-1;border-top:1px solid #2F404D;padding-top:18px;margin-top:8px}
+
+@media (max-width:820px){
+  .menu-btn{display:block}
+  .nav{display:none;position:absolute;left:0;right:0;top:64px;background:var(--asfalto);flex-direction:column;gap:0;padding:8px 20px 16px;z-index:5}
+  .nav.abierto{display:flex}
+  .nav a{padding:12px 0;border-bottom:1px solid #2F404D}
+  .cabecera{position:relative}
+  .garantia-bloque,.red,.modelo-grid,.dos-col,.pie .contenedor{grid-template-columns:1fr}
+  .modelo-grid{gap:24px}
+  .portada{padding:48px 0 44px}
+  .seccion{padding:52px 0}
+  .tablero li{border-right:0;border-bottom:1px solid rgba(22,33,42,.18)}
+}

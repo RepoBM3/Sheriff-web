@@ -1,0 +1,125 @@
+{
+  "categorias": [
+    {"id": "scooter", "nombre": "Automáticas 150", "descripcion": "Scooters y mini moto sin cambios: acelerar y frenar. Livianas y económicas para el día a día."},
+    {"id": "moto", "nombre": "Motos de ruta y trabajo", "descripcion": "Caja de cambios, aro 17 y motor vertical para carretera, trocha y jornada larga."},
+    {"id": "tres-ruedas", "nombre": "Tres ruedas", "descripcion": "Más estabilidad para quien la necesita."}
+  ],
+  "modelos": [
+    {
+      "slug": "corvela-150",
+      "nombre": "CORVELA 150",
+      "categoria": "scooter",
+      "estado": "disponible",
+      "resumen": "Scooter automática de 150 cc con aro 10, freno de disco delantero, faro LED y top box incluido.",
+      "destacado": {"cilindrada": "149.6 cc", "potencia": "6.2 kW", "peso": "99 kg", "tanque": "5.5 L"},
+      "equipamiento": ["Motor 150 cc refrigerado por aire", "Reproductor MP3", "Freno de disco delantero y tambor trasero", "Faro LED", "Aro 10 con llanta 3.50-10", "Alarma", "Top box (baúl trasero)", "Tablero digital"],
+      "colores": [["Negro brillante", "#141414"], ["Blanco", "#F4F4F2"], ["Azul petróleo", "#1F4E5F"], ["Rosado", "#E7A6B8"], ["Celeste", "#8CC6E6"], ["Rojo vino", "#6B1C2B"], ["Tornasol", "tornasol"]],
+      "specs": {
+        "Motor": [["Modelo de motor", "157QMJ"], ["Tipo", "Monocilíndrico 4 tiempos"], ["Cilindrada", "149.6 cc"], ["Diámetro × carrera", "57.4 × 57.8 mm"], ["Potencia máxima", "6.2 kW (8.3 HP) a 7,500 rpm"], ["Torque máximo", "8.5 N·m a 6,500 rpm"], ["Alimentación", "Carburador"], ["Encendido", "Por chispa"], ["Norma de emisiones", "Euro III"]],
+        "Transmisión": [["Caja", "Automática (CVT)"], ["Embrague", "Automático centrífugo"], ["Tracción", "Posterior"]],
+        "Chasis y frenos": [["Suspensión delantera", "Horquilla telescópica"], ["Suspensión posterior", "Brazo oscilante"], ["Aros", "10 / 10"], ["Neumáticos", "3.50-10 / 3.50-10"], ["Freno delantero", "Disco"], ["Freno posterior", "Tambor"]],
+        "Medidas y capacidades": [["Largo × ancho × alto", "1,840 × 690 × 1,100 mm"], ["Distancia entre ejes", "1,250 mm"], ["Radio mínimo de giro", "1,480 mm"], ["Peso neto", "99 kg"], ["Carga útil", "150 kg"], ["Tanque de combustible", "5.5 L"], ["Asientos", "2"]]
+      }
+    },
+    {
+      "slug": "brut-150",
+      "nombre": "BRUT 150",
+      "categoria": "scooter",
+      "estado": "disponible",
+      "resumen": "Mini moto automática de 150 cc: estilo de moto con la facilidad de un scooter. Aro delantero 12, defensa delantera y cubrepuños.",
+      "destacado": {"cilindrada": "149.6 cc", "potencia": "6.2 kW", "peso": "94 kg", "tanque": "5.2 L"},
+      "equipamiento": ["Motor 150 cc refrigerado por aire", "Reproductor MP3", "Freno de disco delantero y tambor trasero", "Faro LED", "Llanta delantera 90/90-12 y trasera 3.50-10", "Alarma", "Cubrepuños", "Tablero digital", "Defensa delantera y del faro"],
+      "colores": [["Negro brillante", "#141414"], ["Blanco", "#F4F4F2"], ["Azul petróleo", "#1F4E5F"], ["Rosado", "#E7A6B8"], ["Verde militar", "#4A5638"], ["Rojo vino", "#6B1C2B"], ["Tornasol", "tornasol"]],
+      "specs": {
+        "Motor": [["Modelo de motor", "157QMJ"], ["Tipo", "Monocilíndrico 4 tiempos"], ["Cilindrada", "149.6 cc"], ["Diámetro × carrera", "57.4 × 57.8 mm"], ["Potencia máxima", "6.2 kW (8.3 HP) a 7,500 rpm"], ["Torque máximo", "8.5 N·m a 6,500 rpm"], ["Alimentación", "Carburador"], ["Encendido", "Por chispa"], ["Norma de emisiones", "Euro III"]],
+        "Transmisión": [["Caja", "Automática (CVT)"], ["Tracción", "Posterior"]],
+        "Chasis y frenos": [["Suspensión delantera", "Horquilla telescópica"], ["Suspensión posterior", "Brazo oscilante"], ["Aros", "12 / 10"], ["Neumáticos", "90/90-12 / 3.50-10"], ["Freno delantero", "Disco"], ["Freno posterior", "Tambor"]],
+        "Medidas y capacidades": [["Largo × ancho × alto", "1,910 × 680 × 1,100 mm"], ["Distancia entre ejes", "1,290 mm"], ["Radio mínimo de giro", "1,540 mm"], ["Peso neto", "94 kg"], ["Carga útil", "150 kg"], ["Tanque de combustible", "5.2 L"], ["Asientos", "2"]]
+      }
+    },
+    {
+      "slug": "cruise-150",
+      "nombre": "CRUISE 150",
+      "categoria": "scooter",
+      "estado": "disponible",
+      "resumen": "Scooter de 150 cc con llantas anchas 120/70-12, frenos de disco adelante y atrás, protector delantero y top box.",
+      "destacado": {"cilindrada": "150 cc", "frenos": "Disco / disco", "llantas": "120/70-12"},
+      "equipamiento": ["Motor 150 cc refrigerado por aire", "Reproductor MP3", "Freno de disco delantero y trasero", "Faro LED", "Llantas 120/70-12", "Protector delantero", "Alarma", "Top box (baúl trasero)", "Tablero digital"],
+      "colores": [],
+      "specs": {},
+      "nota_specs": "Ficha técnica completa en preparación."
+    },
+    {
+      "slug": "bumble-200",
+      "nombre": "BUMBLE 200",
+      "categoria": "moto",
+      "estado": "disponible",
+      "resumen": "Moto de 200 cc con caja de 5 velocidades, frenos de disco en ambas ruedas, monoamortiguador y tanque de 18 litros.",
+      "destacado": {"cilindrada": "199.8 cc", "potencia": "12.5 kW", "peso": "124 kg", "tanque": "18 L"},
+      "equipamiento": ["Motor 200 cc refrigerado por aire", "Caja manual de 5 velocidades", "Frenos de disco delantero y trasero", "Monoamortiguador central", "Aro 17 con llantas 90/90-17 y 120/80-17", "Tanque metálico de 18 litros", "Convertidor catalítico"],
+      "colores": [],
+      "specs": {
+        "Motor": [["Modelo de motor", "163FML"], ["Tipo", "Monocilíndrico 4 tiempos, refrigerado por aire"], ["Cilindrada", "199.8 cc"], ["Diámetro × carrera", "63.0 × 66.2 mm"], ["Potencia máxima", "12.5 kW (16.8 HP) a 7,500 rpm"], ["Torque máximo", "17 N·m a 6,000 rpm"], ["Alimentación", "Carburador"], ["Encendido", "CDI"], ["Norma de emisiones", "Euro III, con convertidor catalítico"]],
+        "Transmisión": [["Caja", "Manual de 5 velocidades"], ["Embrague", "Manual húmedo multidisco"], ["Tracción", "Posterior por cadena"]],
+        "Chasis y frenos": [["Suspensión delantera", "Horquilla telescópica"], ["Suspensión posterior", "Monoamortiguador central"], ["Aros", "17 / 17"], ["Neumáticos", "90/90-17 / 120/80-17"], ["Freno delantero", "Disco"], ["Freno posterior", "Disco"]],
+        "Medidas y capacidades": [["Largo × ancho × alto", "2,025 × 770 × 1,070 mm"], ["Distancia entre ejes", "1,360 mm"], ["Peso neto", "124 kg"], ["Carga útil", "150 kg"], ["Tanque de combustible", "18 L"], ["Asientos", "2"]]
+      }
+    },
+    {
+      "slug": "trooper-200",
+      "nombre": "TROOPER 200",
+      "categoria": "moto",
+      "estado": "disponible",
+      "resumen": "Moto de 200 cc con caja de 5 velocidades, llantas 3.50-17 y 4.60-17 y monoamortiguador para caminos exigentes.",
+      "destacado": {"cilindrada": "196.98 cc", "potencia": "9.7 kW", "peso": "112 kg"},
+      "equipamiento": ["Motor 200 cc de 4 tiempos", "Caja manual de 5 velocidades", "Freno de disco delantero y tambor trasero", "Monoamortiguador central", "Aro 17 con llantas 3.50-17 y 4.60-17", "Convertidor catalítico"],
+      "colores": [],
+      "specs": {
+        "Motor": [["Modelo de motor", "163FML"], ["Tipo", "Monocilíndrico 4 tiempos"], ["Cilindrada", "196.98 cc"], ["Diámetro × carrera", "63.5 × 62.2 mm"], ["Potencia máxima", "9.7 kW (13 HP) a 8,500 rpm"], ["Torque máximo", "13.5 N·m a 7,500 rpm"], ["Alimentación", "Carburador PZ27"], ["Encendido", "CDI"], ["Norma de emisiones", "Euro III, con convertidor catalítico"]],
+        "Transmisión": [["Caja", "Manual de 5 velocidades"], ["Embrague", "Manual húmedo multidisco"], ["Tracción", "Posterior por cadena"]],
+        "Chasis y frenos": [["Suspensión delantera", "Horquilla telescópica"], ["Suspensión posterior", "Monoamortiguador central"], ["Aros", "17 / 17"], ["Neumáticos", "3.50-17 / 4.60-17"], ["Freno delantero", "Disco"], ["Freno posterior", "Tambor"]],
+        "Medidas y capacidades": [["Largo × ancho × alto", "1,980 × 785 × 1,420 mm"], ["Distancia entre ejes", "1,345 mm"], ["Peso neto", "112 kg"], ["Carga útil", "150 kg"], ["Asientos", "2"]]
+      }
+    },
+    {
+      "slug": "destroyer-300",
+      "nombre": "DESTROYER 300",
+      "categoria": "moto",
+      "estado": "disponible",
+      "resumen": "La más potente de la línea: 300 cc refrigerado por aceite, 6 velocidades, horquilla invertida y frenos de disco.",
+      "destacado": {"cilindrada": "299.4 cc", "potencia": "18.5 kW", "peso": "140 kg", "tanque": "15.5 L"},
+      "equipamiento": ["Motor 300 cc refrigerado por aceite", "Caja manual de 6 velocidades", "Horquilla telescópica invertida", "Frenos de disco delantero y trasero", "Monoamortiguador central", "Aro 17 con llantas 110/90-17 y 130/80-17", "Convertidor catalítico"],
+      "colores": [],
+      "specs": {
+        "Motor": [["Modelo de motor", "176YMN"], ["Tipo", "Monocilíndrico 4 tiempos, refrigerado por aceite"], ["Cilindrada", "299.4 cc"], ["Diámetro × carrera", "76 × 66 mm"], ["Potencia máxima", "18.5 kW (24.8 HP) a 7,500 rpm"], ["Torque máximo", "26 N·m a 6,000 rpm"], ["Alimentación", "Carburador BPZ35"], ["Encendido", "CDI"], ["Norma de emisiones", "Euro III, con convertidor catalítico"]],
+        "Transmisión": [["Caja", "Manual de 6 velocidades"], ["Embrague", "Manual húmedo multidisco"], ["Tracción", "Posterior por cadena"]],
+        "Chasis y frenos": [["Suspensión delantera", "Horquilla telescópica invertida"], ["Suspensión posterior", "Monoamortiguador central"], ["Aros", "17 / 17"], ["Neumáticos", "110/90-17 / 130/80-17"], ["Freno delantero", "Disco"], ["Freno posterior", "Disco"]],
+        "Medidas y capacidades": [["Largo × ancho × alto", "2,060 × 820 × 1,160 mm"], ["Distancia entre ejes", "1,380 mm"], ["Peso neto", "140 kg"], ["Carga útil", "150 kg"], ["Tanque de combustible", "15.5 L"], ["Asientos", "2"]]
+      }
+    },
+    {
+      "slug": "lynxa-150-3r",
+      "nombre": "LYNXA 150 3R",
+      "categoria": "tres-ruedas",
+      "estado": "disponible",
+      "resumen": "Versión de tres ruedas de la LYNXA, con motor de 150 cc. La versión de dos ruedas llegará más adelante.",
+      "destacado": {"cilindrada": "150 cc", "ruedas": "3"},
+      "equipamiento": [],
+      "colores": [],
+      "specs": {},
+      "nota_specs": "Ficha técnica completa en preparación."
+    },
+    {
+      "slug": "sable-250",
+      "nombre": "SABLE 250",
+      "categoria": "moto",
+      "estado": "proximamente",
+      "resumen": "Nuevo modelo de 250 cc refrigerado por aceite, con horquilla invertida, doble disco delantero y llanta trasera 150/70-17.",
+      "destacado": {"cilindrada": "250 cc", "válvulas": "4", "llanta trasera": "150/70-17"},
+      "equipamiento": ["Motor 250 cc de 4 válvulas refrigerado por aceite", "Horquilla telescópica invertida", "Doble disco delantero y disco trasero", "Faro LED", "Llantas 110/70-17 y 150/70-17", "Tablero digital", "Puerto USB", "Reproductor MP3", "Alarma", "Protector anticaídas", "Espejos LED"],
+      "colores": [],
+      "specs": {},
+      "nota_specs": "Llega el próximo mes. Publicaremos la ficha técnica completa a su llegada."
+    }
+  ]
+}
