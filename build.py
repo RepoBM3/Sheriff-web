@@ -57,7 +57,7 @@ BASE = """<!doctype html>
 <a class="saltar" href="#contenido">Ir al contenido</a>
 <header class="cabecera">
   <div class="contenedor">
-    <a class="marca" href="/"><img src="/img/logo-sheriff-blanco.png" alt="SHERIFF" width="190" height="48"></a>
+    <a class="marca" href="/"><img src="/img/logo-sheriff.svg" alt="SHERIFF" width="150" height="38"></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menú</button>
     <nav class="nav" id="nav" aria-label="Principal">
       <a href="/#modelos" {% if seccion=='modelos' %}aria-current="page"{% endif %}>Modelos</a>
@@ -113,7 +113,7 @@ INICIO = """{% extends "base" %}{% from "ficha" import ficha %}
 <section class="portada">
   <div class="contenedor">
     <h1>Para cada camino, una SHERIFF.</h1>
-    <p>Scooters, motos de ruta y modelos de tres ruedas pensados para el día a día en el Perú. Conoce cada modelo, su ficha técnica y la garantía que lo respalda.</p>
+    <p>Scooters, mini motos, motos de ruta y modelos de tres ruedas pensados para el día a día en el Perú. Conoce cada modelo, su ficha técnica y la garantía que lo respalda.</p>
     <div class="botones">
       <a class="btn" href="#modelos">Ver modelos</a>
       <a class="btn sec" href="/garantia/">Garantía</a>
