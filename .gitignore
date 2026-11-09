@@ -1,2 +1,8 @@
-public/*
-!public/img/
+public/*.html
+public/modelos/
+public/garantia/
+public/red-sheriff/
+public/assets/
+public/sitemap.xml
+public/robots.txt
+public/_headers
