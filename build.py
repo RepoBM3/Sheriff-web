@@ -340,7 +340,7 @@ MODELO = """{% extends "base" %}{% from "tarjeta" import tarjeta %}
 <section class="banda-g">
   <div class="contenedor banda-g-in">
     <p><b>12 meses o 10,000 km</b> de garantía y mano de obra gratuita en los servicios de 300, 1,500 y 3,000 km.</p>
-    <a class="btn osc" href="/garantia/">Ver garantía</a>
+    <a class="btn" href="/garantia/">Ver garantía</a>
   </div>
 </section>
 
