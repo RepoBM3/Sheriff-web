@@ -91,7 +91,9 @@ BASE = """<!doctype html>
 <meta property="og:url" content="{{ dominio }}{{ ruta }}">
 {% if og_img %}<meta property="og:image" content="{{ dominio }}{{ og_img }}">{% endif %}
 <meta name="theme-color" content="#0B0C0E">
-<link rel="icon" href="/img/emblema-32.png" type="image/png">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/img/emblema-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/img/emblema-180.png">
 <link rel="preload" href="/fonts/archivo-wdth.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/site.css?v={{ version }}">
