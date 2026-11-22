@@ -869,6 +869,12 @@
    "titular": "Hecha para salir del asfalto."
   },
   {
+   "modelo": "corvela-150",
+   "color": "rojo",
+   "antetitulo": "150 cc · automática",
+   "titular": "La ciudad, a tu ritmo."
+  },
+  {
    "modelo": "bumble-200",
    "color": "rojo",
    "antetitulo": "200 cc · 5 velocidades",
